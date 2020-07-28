@@ -4,21 +4,18 @@ import java.awt.image.BufferedImage;
 
 public class Hero extends FlyingObjects {
     private int score;
+    private int doubleFire = 0;
+    private int count = 0;
+    private BufferedImage[] herosImg = {Main.hero0, Main.hero0, Main.hero0, Main.hero1, Main.hero1, Main.hero1};
 
     public Hero() {
         super(200 - Main.hero0.getWidth() / 2, 600 - Main.hero0.getHeight(), Main.hero0, 5);
         score = 0;
     }
 
-    //
-    private int doubleFire = 0;
-
     public void addDoubleFire() {
         doubleFire += 20;
     }
-
-    private int count = 0;
-    private BufferedImage[] herosImg = {Main.hero0, Main.hero0, Main.hero0, Main.hero1, Main.hero1, Main.hero1};
 
     @Override
     public void move() {
@@ -45,8 +42,6 @@ public class Hero extends FlyingObjects {
     //判断英雄机是否被其他飞机击中
     public boolean shootByFlying(FlyingObjects fly) {
         if (true) {
-
-
             return true;
         } else
             return false;

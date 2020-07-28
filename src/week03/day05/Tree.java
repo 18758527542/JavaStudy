@@ -1,5 +1,6 @@
 package week03.day05;
 
+//用循环的方式建立二叉树
 public class Tree {
     private class Node {
         private int data;
